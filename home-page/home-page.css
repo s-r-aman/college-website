@@ -6,6 +6,10 @@
   font-weight: 300;
 }
 
+body{
+  overflow-x:none;
+}
+
 section {
   margin-top: 110px;
   padding-bottom: 20px;
