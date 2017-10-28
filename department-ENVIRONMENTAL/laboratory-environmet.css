@@ -1,0 +1,259 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*-----------------------------------------------------
+              designing the header
+  -------------------------------------------------*/
+
+.tm-header {
+  background: #d05454;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  box-shadow: 0 5px 20px rgba(0, 4, 0, 0.28);
+  z-index: 300;
+  top: 0;
+}
+
+.tm-header h1 {
+  color: #fff7f7;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+/*--------------------------------------------------
+            designing the top navbar
+  ---------------------------------------------------*/
+
+.tm-navbar {
+  background: #ffffff;
+  height: 50px;
+  position: fixed;
+  top: 55px;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 4, 0, 0.28);
+  z-index: 200;
+}
+
+.tm-navbar ul {
+  list-style: none;
+  padding: 0 10% 0 10%;
+  text-align: center;
+}
+
+.tm-navbar ul li {
+  display: inline;
+  padding: 0 4% 0 4%;
+}
+
+.tm-navbar ul li a {
+  color: #262626;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*---------------------------------------------------------
+         designing the side streatchy navbar
+  ---------------------------------------------------------*/
+
+.side-nav {
+  position: fixed;
+  right: 10px;
+  top: 170px;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 300ms;
+  background: #d05454;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.side-nav--open {
+  clip-path: circle(150% at top right);
+}
+
+.side-nav ul {
+  /* side-nav is a class of nav tag*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav ul li {
+  position: relative;
+  border-bottom: 2px solid #cd4849;
+}
+
+.side-nav ul li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.side-nav ul li:last-child {
+  border-radius: 0 0 10px 10px;
+  border: none;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 30px;
+  display: block;
+  position: relative;
+}
+
+.side-nav ul li a:hover {
+  color: #36424c;
+
+}
+
+.nav--icon {
+  z-index: 200;
+  color: black;
+}
+
+/*------------------------------------------------------
+  designing the toggle menu for side streatchy navbar
+  -----------------------------------------------------*/
+
+.menu-toggle {
+  position: fixed;
+  padding: 20px 10px;
+  background: #d05454;
+  top: 120px;
+  right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  width: 25px;
+  background-color: #fff;
+  height: 3px;
+  content: '';
+  display: block;
+  transition: all ease-in-out 200ms;
+  border-radius: 3px;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(5px);
+}
+
+.menu-toggle--open .hamburger {
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.menu-toggle--open .hamburger::before {
+  opacity: 0;
+}
+
+.menu-toggle--open .hamburger::after {
+  transform: rotate(-90deg) translate(2px);
+  background-color: #fff;
+}
+
+/*------------------------------------------------------
+   designing the main content start here
+  -----------------------------------------------------*/
+
+  .container{
+    width: 1420px;
+    margin: 0 auto;
+  }
+  .civil {
+    width: 100%;
+    height: 200px;
+    background: #d05454;
+    /* position: relative; */
+    top: 200px;
+    margin-top: 110px;
+  }
+
+  .civil h1 {
+    color: #f5f8f9;
+    position: relative;
+    text-align: center;
+    top: 15px;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+.civil img {
+  width: 200px;
+  height: 200px;
+  border-radius: 500%;
+  display: block;
+  margin: 0 auto;
+
+box-shadow: 0 6px 20px 0 rgb(0, 0, 0);
+}
+
+/*--------------------------
+      lab list
+  -------------------------*/
+  .laboratory {
+    display: block;
+    width: 70%;
+    margin: 200px auto;
+    padding: 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
+  }
+
+  section h2{
+    text-align: center;
+    margin-top: 210px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 5px;
+  }
+
+  .laboratory ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .laboratory ul li{
+    list-style: none;
+  }
+
+
+  .laboratory ul li h4{
+    margin: 0;
+    border-bottom: 1px solid #dcdcdc;
+      border-top: 1px solid #dcdcdc;
+    text-align: center;
+    padding: 15px;
+    border-collapse: collapse;
+    font-weight: 100;
+
+  }
+
+  .lab:hover{
+    background-color: rgba(148, 148, 148, 0.74);
+  }
+
+
+  .content {
+
+    border-top: 10px solid white;
+    background: #f8f8f8;
+    border:1px solid #e7e7e7;
+
+    height: 800px;
+  }
